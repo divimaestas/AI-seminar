@@ -1,0 +1,21 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/shakespeare-insult.sh\" show",
+            "timeout": 5
+          },
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/shakespeare-insult.sh\" refill",
+            "async": true,
+            "timeout": 90
+          }
+        ]
+      }
+    ]
+  }
+}

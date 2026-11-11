@@ -5,14 +5,8 @@
         "hooks": [
           {
             "type": "command",
-            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/shakespeare-insult.sh\" show",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/son-of-anton.sh\"",
             "timeout": 5
-          },
-          {
-            "type": "command",
-            "command": "bash \"$CLAUDE_PROJECT_DIR/.claude/hooks/shakespeare-insult.sh\" refill",
-            "async": true,
-            "timeout": 90
           }
         ]
       }
